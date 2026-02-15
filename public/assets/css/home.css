@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+:root{
+    --color_prin: #80e8e374;
+    --color_sec: #094542;
+    --black: rgb(50, 49, 49);;
+    --white: white;
+}
+
+/*Normalización standar*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    list-style: none;
+    color: var(--black);
+    text-decoration: none;
+}
+
+body{
+    background: rgb(255,255,255);
+}
+
+.header{
+    padding: 0.5em;
+    padding-left: 2em;
+    background-color: var(--color_prin);
+    font-size: 0.9em;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em;
+}
+
+.body-h2{
+    display: flex;
+    font-size: 0.8em;
+    text-align: center;
+    justify-content: center;
+}
+
+.body-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.body-buscador{
+    display: flex;
+    position: relative;
+    gap: 1em;
+    margin-left: 1em;
+    align-items: center;
+    width: 60%;
+}
+
+.sugerencias{
+    position: absolute;
+    top: 40px;
+    width: 70%;
+    background: white;
+    border-radius: 8px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+}
+
+.sugerencia-item{
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.sugerencia-item:hover{
+    background-color: #f0f0f0;
+}
+
+.input-buscador{
+    border-radius: 1em;
+    width: 70%;
+    border: 1px solid var(--black);
+    height: 30px;
+    padding: 1em;
+}
+
+.buscador-boton{
+    padding: 0.5em;
+    border: none;
+    border-radius: 1em;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.body-botones{
+    display: flex;
+    gap: 1.5em;
+}
+
+.body-historial{
+    padding: 0.6em;
+    border-radius: 1em;
+    border: none;
+    background-color: var(--color_sec);
+    color: var(--white);
+}
+
+.body-table{
+    display: flex;
+    overflow-x: auto;
+}
+
+.tablaCiudades{
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    min-width: 800px;
+}
+
+.tablaTitulos{
+    padding: 1em;
+    background-color: rgb(50, 49, 49);
+}
+
+.tablaTitulosTd{
+    color: var(--white);
+    border-radius: 5px;
+    padding: 0.3em;
+    overflow: hidden;
+}
+
+.tablaElementos{
+    padding: 1em;
+}
+
+.tablaElementosTd{
+    padding: 1em;
+    overflow: hidden;
+}

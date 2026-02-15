@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <script src="assets/js/home.js" defer></script>
+    <title>El clima</title>
+</head>
+<body>
+    <header class="header">
+        <h1 title="El clima">El clima</h1>
+    </header>
+    <div class="body">
+        <div class="body-h2">
+            <h2 title="Consulta el clima">Consulta el clima</h2>
+        </div>
+        <div class="body-actions">
+            <div class="body-buscador">
+                <input placeholder="Busca una ciudad por nombre" type="text" class="input-buscador" title="buscador" id="inputCiudad">
+                <div id="sugerencias" class="sugerencias"></div>
+            </div>
+            <div class="body-botones">
+                <button class="body-historial" title="Historial" id="btnHistorial">Historial</button>
+            </div>
+        </div>
+        <div class="body-table"> 
+            <table class="tablaCiudades" id="tablaCiudades">
+                <thead>
+                    <tr class="tablaTitulos">
+                        <td class="tablaTitulosTd" title="Ciudad">Ciudad</td>
+                        <td class="tablaTitulosTd" title="Latitud">Latitud</td>
+                        <td class="tablaTitulosTd" title="Longitud">Longitud</td>
+                        <td class="tablaTitulosTd" title="Clima">Clima</td>
+                        <td class="tablaTitulosTd" title="Temperatura">Temperatura</td>
+                        <td class="tablaTitulosTd" title="Temperatura Maxima">Temperatura Maxima</td>
+                        <td class="tablaTitulosTd" title="Temperatura Mínima">Temperatura Mínima</td>
+                        <td class="tablaTitulosTd" title="Sensación Térmica">Sensación Térmica</td>
+                    </tr>
+                </thead>
+                <tbody id="tablaElementos">
+                <!-- Se rellena con llamada a api -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+[
+  {
+    "lugar": "Guanajuato, Guanajuato, México",
+    "lat": 21.01671,
+    "lon": -101.25405,
+    "clima": "Clouds",
+    "temp": 24.54,
+    "temp_max": 24.54,
+    "temp_min": 24.54,
+    "feels_like": 23.6
+  },
+  {
+    "lugar": "Puebla, Puebla, México",
+    "lat": 19.043692,
+    "lon": -98.19906,
+    "clima": "Clear",
+    "temp": 29,
+    "temp_max": 29.69,
+    "temp_min": 27.46,
+    "feels_like": 27.72
+  },
+  {
+    "lugar": "Honduras",
+    "lat": 14.761664,
+    "lon": -86.921641,
+    "clima": "Clouds",
+    "temp": 26.7,
+    "temp_max": 26.7,
+    "temp_min": 26.7,
+    "feels_like": 26.35
+  }
+]

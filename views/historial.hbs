@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <title>Historial</title>
+</head>
+<body>
+    <header class="header">
+        <h1 title="El clima"><a href="/home">El clima</a></h1>
+    </header>
+    <div class="body">
+        <div class="body-h2">
+            <h2 title="Historial de búsqueda">Historial de búsqueda</h2>
+        </div>
+        <div class="body-table"> 
+            <table class="tablaCiudades" id="tablaCiudades">
+                <thead>
+                    <tr class="tablaTitulos">
+                        <td class="tablaTitulosTd" title="Ciudad">Ciudad</td>
+                        <td class="tablaTitulosTd" title="Latitud">Latitud</td>
+                        <td class="tablaTitulosTd" title="Longitud">Longitud</td>
+                        <td class="tablaTitulosTd" title="Clima">Clima</td>
+                        <td class="tablaTitulosTd" title="Temperatura">Temperatura</td>
+                        <td class="tablaTitulosTd" title="Temperatura Maxima">Temperatura Maxima</td>
+                        <td class="tablaTitulosTd" title="Temperatura Mínima">Temperatura Mínima</td>
+                        <td class="tablaTitulosTd" title="Sensación Térmica">Sensación Térmica</td>
+                    </tr>
+                </thead>
+                <tbody id="tablaElementos">
+                    {{#each historial}}
+                    <tr class="tablaElementos">
+                        <td class="tablaElementosTd" title="{{lugar}}">{{lugar}}</td>
+                        <td class="tablaElementosTd" title="{{lat}}">{{lat}}</td>
+                        <td class="tablaElementosTd" title="{{lon}}">{{lon}}</td>
+                        <td class="tablaElementosTd" title="{{clima}}">{{clima}}</td>
+                        <td class="tablaElementosTd" title="{{temp}}">{{temp}} °C</td>
+                        <td class="tablaElementosTd" title="{{temp_max}}">{{temp_max}} °C</td>
+                        <td class="tablaElementosTd" title="{{temp_min}}">{{temp_min}} °C</td>
+                        <td class="tablaElementosTd" title="{{feels_like}}">{{feels_like}} °C</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
