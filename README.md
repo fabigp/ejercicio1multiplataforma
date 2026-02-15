@@ -1,12 +1,12 @@
-🌦️ Weather App - Práctica de Laboratorio 01
+## 🌦️ Weather App - Práctica de Laboratorio 01
 Esta es una aplicación web desarrollada con Node.js y Express para la consulta de información climática en tiempo real. El proyecto integra el consumo de APIs externas de geocodificación y clima, manejo de vistas dinámicas con Handlebars (HBS) y persistencia de datos local para el historial de búsquedas.
 
 Desplegado en: [URL de Railway aquí]
 
-📌 Planteamiento del Problema
+## 📌 Planteamiento del Problema
 La Facultad de Ingeniería requiere centralizar la información climática de ciudades clave para la comunidad UPAEP (Puebla, Tehuacán, CDMX, Veracruz, Tijuana, etc.) a través de una interfaz web responsiva y accesible.
 
-Características Principales:
+### Características Principales:
 Búsqueda dinámica: Formulario para consultar el clima de cualquier ciudad.
 
 Visualización clara: Presentación de datos meteorológicos de forma atractiva.
@@ -17,7 +17,7 @@ Diseño Responsivo: Interfaz adaptada a dispositivos móviles y escritorio media
 
 Arquitectura MVC: Separación clara entre Modelos, Vistas y Controladores.
 
-🛠️ Tecnologías Utilizadas
+## 🛠️ Tecnologías Utilizadas
 Entorno de Ejecución: Node.js
 
 Framework Web: Express
@@ -32,7 +32,7 @@ Despliegue: Railway.app
 
 Control de Versiones: Git & GitHub
 
-🏗️ Arquitectura del Proyecto (MVC)
+## 🏗️ Arquitectura del Proyecto (MVC)
 El proyecto sigue el patrón Modelo-Vista-Controlador para asegurar la escalabilidad:
 
 Models: manejo del historial (lectura/escritura de archivos JSON) y peticiones a APIs (Mapbox/OpenWeather).
@@ -41,40 +41,46 @@ Views: Plantillas .hbs y parciales reutilizables para la interfaz de usuario.
 
 Controllers: Intermediarios que gestionan las peticiones HTTP y coordinan la respuesta.
 
-🚀 Configuración e Instalación
-Requisitos Previos
+## 🚀 Configuración e Instalación
+### Requisitos Previos
 Node.js instalado (v14 o superior).
 
 Cuenta y API Keys de Mapbox (Geocodificación) y OpenWeather (Clima).
 
-Pasos a seguir:
+### Pasos a seguir:
 Clonar el repositorio:
-Bash
-git clone https://github.com/tu-usuario/nombre-del-repo.git
-cd nombre-del-repo
+
+git clone https://github.com/fabigp/ejercicio1multiplataforma.git
+
+cd ejercicio1multiplataforma
 
 Instalar dependencias:
-Bash
+
 npm install
+
 Configurar variables de entorno:
+
 Crea un archivo .env en la raíz del proyecto con las siguientes variables:
 
-Fragmento de código
 PORT=3000
+
 MAPBOX_KEY=tu_api_key_de_mapbox
+
 OPENWEATHER_KEY=tu_api_key_de_openweather
 
 Ejecutar la aplicación:
+
 npx nodemon app.js
 
-🌐 Despliegue en Railway
+## 🌐 Despliegue en Railway
 La aplicación está configurada para el despliegue continuo:
 
 Se vincula el repositorio de GitHub a Railway.
 
 Se configuran las Variables de Entorno en el panel de Railway (imprescindible para el PORT y las API_KEYS).
 
-👥 Autor
+## 👥 Autor
 Fabiola García Piana
 
 Nota: Este proyecto fue realizado como parte de la Práctica de Laboratorio 01 para el curso de Desarrollo de Aplicaciones Multiplataforma en la UPAEP.
+
