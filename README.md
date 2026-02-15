@@ -48,17 +48,17 @@ Node.js instalado (v14 o superior).
 Cuenta y API Keys de Mapbox (Geocodificación) y OpenWeather (Clima).
 
 ### Pasos a seguir:
-Clonar el repositorio:
+#### Clonar el repositorio:
 
 git clone https://github.com/fabigp/ejercicio1multiplataforma.git
 
 cd ejercicio1multiplataforma
 
-Instalar dependencias:
+#### Instalar dependencias:
 
 npm install
 
-Configurar variables de entorno:
+#### Configurar variables de entorno:
 
 Crea un archivo .env en la raíz del proyecto con las siguientes variables:
 
@@ -68,7 +68,7 @@ MAPBOX_KEY=tu_api_key_de_mapbox
 
 OPENWEATHER_KEY=tu_api_key_de_openweather
 
-Ejecutar la aplicación:
+#### Ejecutar la aplicación:
 
 npx nodemon app.js
 
@@ -83,4 +83,5 @@ Se configuran las Variables de Entorno en el panel de Railway (imprescindible pa
 Fabiola García Piana
 
 Nota: Este proyecto fue realizado como parte de la Práctica de Laboratorio 01 para el curso de Desarrollo de Aplicaciones Multiplataforma en la UPAEP.
+
 
