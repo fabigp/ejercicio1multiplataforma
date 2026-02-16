@@ -21,6 +21,7 @@
 
 body{
     background: rgb(255,255,255);
+    height: 100%;
 }
 
 .header{
@@ -35,6 +36,7 @@ body{
     flex-direction: column;
     gap: 2em;
     padding: 2em;
+    min-height: 87.5vh;
 }
 
 .body-h2{
@@ -140,4 +142,16 @@ body{
 .tablaElementosTd{
     padding: 1em;
     overflow: hidden;
+}
+
+.footer{
+    background-color: rgb(50, 49, 49);
+    display: flex;
+    padding: 0.7em;
+    justify-content: space-between;
+}
+
+.footer-p{
+    font-size: 0.7em;
+    color: var(--white);
 }
